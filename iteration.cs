@@ -82,7 +82,5 @@ public class HelloWorld
         {
             Console.WriteLine($"Processing {num} on thread {Task.CurrentId}");
         });
-
-        //
     }
 }
