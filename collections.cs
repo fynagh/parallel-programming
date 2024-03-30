@@ -42,5 +42,31 @@ class Program
         numberStack.Push(2);
         Console.WriteLine("Popped Number: " + numberStack.Pop()); //Pop metodu növbənin sonuncu elementi götürür və silir.
         Console.WriteLine("Popped Number: " + numberStack.Pop());
+
+        //SortedSet
+        int firstElement = 0;  
+        IEnumerator<int> enumerator = sortedNumbersSet.GetEnumerator();
+        if (enumerator.MoveNext())
+        {
+            firstElement = enumerator.Current;
+        }
+        Console.WriteLine("First Element: " + firstElement); 
+
+        //LinkedList
+        LinkedList<int> linkedList = new LinkedList<int>();
+        linkedList.AddLast(1);
+        linkedList.AddLast(2);
+
+        //SortedList
+        SortedList<int, string> sortedList = new SortedList<int, string>();
+        sortedList.Add(3, "Three");
+        sortedList.Add(1, "One");
+
+
+        //SortedDictionary
+        SortedDictionary<string, int> sortedDictionary = new SortedDictionary<string, int>();
+        sortedDictionary.Add("Alice", 30);
+        sortedDictionary.Add("Bob", 25);
+
     }
 }
