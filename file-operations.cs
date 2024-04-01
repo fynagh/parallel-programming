@@ -43,7 +43,7 @@ class Program {
 
 
 
-    // Mətn faylının linkini dəyişəndə saxlayırıq
+                // Mətn faylının linkini dəyişəndə saxlayırıq
 		string file = @"C:\Documents\Textfile.txt"; 
 
 		// Mətnin hamsını fayla yazmaq
@@ -63,8 +63,7 @@ class Program {
 		Console.WriteLine(File.ReadAllText(file)); 
 
 		// StreamWriter ilə fayla sətir-sətir yazmaq 
-		string[] textLines2 = { "New first line", 
-					          "New second line" }; 
+		string[] textLines2 = { "New first line",  "New second line" }; 
 
 		using(StreamWriter writer = new StreamWriter(file)) 
 		{ 
