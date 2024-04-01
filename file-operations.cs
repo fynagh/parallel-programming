@@ -55,9 +55,7 @@ class Program {
 		Console.WriteLine(); 
 
 		// Mətni sətir-sətir yazmaq
-		string[] textLines1 = { "First line", 
-							"Second line", 
-							"Third line" }; 
+		string[] textLines1 = { "First line", "Second line", "Third line" }; 
 
 		File.WriteAllLines(file, textLines1); 
 
